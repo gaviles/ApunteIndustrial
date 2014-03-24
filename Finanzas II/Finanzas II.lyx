@@ -1,0 +1,4383 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrbook
+\begin_preamble
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{pgfplots}
+\usepackage{pstricks}
+\end_preamble
+\use_default_options true
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Marketing II"
+\pdf_author "Gustavo Avilés SEgovia"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize letterpaper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 4cm
+\bottommargin 2cm
+\headheight 0cm
+\headsep 0cm
+\footskip 0cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Resumen Finanzas II
+\end_layout
+
+\begin_layout Subject
+Este es un resumen realizado en bases a las clases de Finanzas II, sin ninguna
+ relación con la universidad o el profesor que dicta el ramo.
+ Si es que se encuentra algún error por favor avisar a gustavo@gaviles.com.
+ Y antes de imprimir este documento verifica en www.gaviles.com que sea la
+ versión más reciente del resumen.
+\end_layout
+
+\begin_layout Author
+Gustavo Avilés Segovia =]
+\end_layout
+
+\begin_layout Chapter
+Renta Fija
+\end_layout
+
+\begin_layout Section
+Valorización
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega=\left(1+r\bigtriangleup t\right)^{n}=\left(1+\frac{r}{f}\right)^{f\cdot T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $f=0$
+\end_inset
+
+ entonces se obtiene interés simple 
+\begin_inset Formula $\omega=1+r\cdot T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $f\rightarrow\infty$
+\end_inset
+
+entonces se tiene composición contínua 
+\begin_inset Formula $\omega=\exp\left(r\cdot t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mbox{Valor Par}$
+\end_inset
+
+ Se obtiene el mismo valor que se invierte para descontar la tasa.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mbox{Tasa Spot}$
+\end_inset
+
+ Esta tasa que se aplica a un instrumento desde hoy hasta un tiempo 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mbox{Tasa Forward}$
+\end_inset
+
+ Es una tasa que se aplica a un instrumento que tendrá validez en un tiempo
+ futuro 
+\begin_inset Formula $t$
+\end_inset
+
+ hasta 
+\begin_inset Formula $T$
+\end_inset
+
+, pero el valor de esta tasa es acordada hoy.
+ Utilizando el principio de 
+\begin_inset Quotes eld
+\end_inset
+
+no arbitraje
+\begin_inset Quotes erd
+\end_inset
+
+ entonces 
+\begin_inset Formula $\left(1+r_{spot\left(0,t\right)}\right)\left(1+r_{forward\left(t,T\right)}\right)=\left(1+r_{spot\left(0,T\right)}\right)$
+\end_inset
+
+ este instrumento es una combinación entre un crédito y un depósito a plazo.
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Se toma un crédito entre 0 y T, depositándose dicho monto entre 0 y t, para
+ luego prestar a una tasa forward entre t y T.
+\end_layout
+
+\begin_layout Section
+Coeficiente de Apalancamiento
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+k=\frac{Pasivo}{Activo}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si la duration del activo es mayor que la duration del pasivo, existe riesgo
+ de que la tasa suba.
+ Para compensar este riesgo se pueden tomar seguros de tasa SWAP.
+\end_layout
+
+\begin_layout Section
+Forward Rate Agreement (FRA)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{Forward_{1}}{1+r_{1}t_{1}}=\frac{Forward_{2}}{1+r_{2}t_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Forward_{2}=Forward_{1}\left(1+r_{forward\left(t_{1},t_{2}\right)}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Valorización
+\end_layout
+
+\begin_layout Standard
+Por no arbitraje, en el momento en que se firma el 
+\begin_inset Quotes eld
+\end_inset
+
+forward Rate Agreement
+\begin_inset Quotes erd
+\end_inset
+
+ este no posee valor.
+ Esto no significa que para todo el período entre 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+y 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+este no pueda ser valorizado.
+ De esta forma si la tasa de interés es superior a la tasa acordada el FRA
+ tendrá un valor proporcional a la diferencia de tasa, adicionalmente si
+ la tasa de interés es menor a la tasa acordada el FRA
+\emph on
+ no tendrá valor
+\emph default
+ (Se podría considerar un valor negativo como 
+\begin_inset Quotes eld
+\end_inset
+
+lo que se tendría que pagar para deshacerse del contrato
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ValorFra(t)=\frac{1}{1+r_{2}\left(t\right)\left(t_{2}-t_{1}\right)}\left(r_{forward\left(t,t_{1},t_{2}\right)}-r_{forward\left(0,t_{1},t_{2}\right)}\right)\left(t_{2}-t_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{forward\left(0,t_{1},t_{2}\right)}$
+\end_inset
+
+ corresponde a la tasa forward calculada inicialmente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{forward\left(t,t_{1},t_{2}\right)}$
+\end_inset
+
+ corresponde a la tasa forward entre 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $t_{2}$
+\end_inset
+
+ pero calculada el día 
+\begin_inset Formula $t$
+\end_inset
+
+ de la valorización.
+\end_layout
+
+\begin_layout Subsection
+Forward de Tasa
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PrecioForwad=PrecioSpot\frac{\left(1+r_{pesos}\right)^{t/360}}{\left(1+r_{dólares}\right)^{t/360}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mbox{Curva FX}$
+\end_inset
+
+ Es la curva del tipo de cambio forward a diferentes duraciones.
+\end_layout
+
+\begin_layout Section
+SWAP
+\end_layout
+
+\begin_layout Standard
+El SWAP es un seguro que se paga al final del periodo, el cual se representa
+ en forma de un contrato de intercambio de flujos futuros.
+ Este seguro consiste desde el punto de vista del comprador de un SWAP,
+ en recibir tasa flotante y pagar tasa fija
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+FRA\neq SWAP
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para estructurar el SWAP se debe encontrar una tasa fija 
+\begin_inset Formula $r_{fija}$
+\end_inset
+
+ de forma que se igualen los valores presentes tanto del instrumento sin
+ protección como el instrumento con protección.
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $\mbox{Cross Currency SWAP}$
+\end_inset
+
+ Es un SWAP que intercambia flujos de monedas (Dolar-peso, por ejemplo).
+ Este instrumento es equivalente a un forward de moneda.
+\end_layout
+
+\begin_layout Standard
+La principal característica de un SWAP esta dada por que al intercambiar
+ tasa fija por flotante en cada período, éste posee un valorización 
+\begin_inset Quotes eld
+\end_inset
+
+neutra
+\begin_inset Quotes erd
+\end_inset
+
+ o cero en cada punto de revalorización.
+ De esta forma el valor presente de éste instrumento para una fecha distinta
+ a la del pago de cupón, corresponde a la valorización de la diferencia
+ de tasa entre la acordada y la tasa actual, pero solo considerando un período
+ de tiempo entre hoy y el próximo corte de cupón.
+ Esto se debe por que en el próximo corte de cupón se volverá a valorizar
+ el SWAP, de esta si se considera que no existe arbitraje, entonces el SWAP
+ tendrá valor 0, no aportando a su valorización.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Falta agregar como se valoriza un swap -> el valor presente de las piernas
+ fijas descontadas con las tasas flotantes debe ser igual a el nocional
+ (descontar las piernas flotantes)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Duration de un Bono
+\end_layout
+
+\begin_layout Standard
+Este es un ratio que representa el punto, en que en promedio un bono será
+ pagado, llevado a valor presente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Duration=\frac{\sum_{i=1}^{n}\frac{F_{i}i}{\left(1+r_{i}\right)^{i}}}{ValorPresente}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Relación Duartion Tir y Valor de un Bono
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\triangle V}{V}=\frac{-Duration}{1+r}*\triangle Tir
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\triangle V=-ValorPresente*DurationModificada*\triangle Tir
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Renta Variable
+\end_layout
+
+\begin_layout Section
+Capital Asset Pricing Model (CAPM)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+RetornoEsperado=r_{\mbox{libre de riesgo}}+\beta_{i}\left(r_{mercado}-r_{\mbox{libre de riesgo}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Retorno Activo}_{i}=\frac{Precio_{\left(1,1\right)}-Precio_{\left(1,0\right)}}{Precio_{\left(1,0\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Retorno Activo}_{i}=\log\left(\frac{Precio_{\left(1,1\right)}}{Precio_{\left(1,0\right)}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando la visión vectorial de los activos, estos están compuestos por
+ la suma entre el riesgo sistemático y el riesgo diversificables, estos
+ dos vectores son perpendiculares, por lo que el riesgo sistemático no puede
+ ser cancelado al diversificar la cartera, en cambio el riesgo diversificable
+ puede ser cancelado, comprando otros activos que posean su vector diversificabl
+e con sentido negativo a el riesgo que la cartera posee.
+\end_layout
+
+\begin_layout Section
+Cartera de activos de renta variable
+\end_layout
+
+\begin_layout Standard
+Una cartera esta compuesta por 
+\begin_inset Formula $i$
+\end_inset
+
+ activos, estos activos sumados equivalen a el precio de la cartera o inversión.
+ De esta forma se puede considerar que cada activo posee 
+\begin_inset Formula $\omega_{i}$
+\end_inset
+
+ de la cartera, con 
+\begin_inset Formula $\omega_{i}\in[0,1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega\in\mathbb{R}^{n}\mbox{ tal que }\sum_{i}\omega_{i}=1\qquad\omega=\left[\begin{array}{c}
+\omega_{1}\\
+\omega_{2}\\
+\vdots\\
+\omega_{n}
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Esperanza de la Cartera}=\omega^{T}\cdot\mbox{Esperanza de Retornos}=\omega^{T}\tilde{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Varianza=\sigma_{\omega}^{2}=\omega^{T}\Omega\omega=\sum_{i}\sum_{j}\omega_{i}\omega_{j}\sigma_{\left(i,j\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dónde 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ es la matriz de varianza covarianza.
+\end_layout
+
+\begin_layout Subsection
+Cartera de Mínima Varianza
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\min_{\omega\in\mathbb{R}^{n}}\left\{ \frac{1}{2}\sigma^{2}=\frac{1}{2}\omega^{T}\Omega\omega\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+s.a\qquad\sum_{i}\omega_{i}=1=\omega^{T}\vec{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Resolviendo el lagrangiano de este sistema de optimización se obtiene:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega_{óptimo}=\lambda\Omega^{-1}\vec{1}\qquad\lambda=\sigma^{2}=\frac{1}{\vec{1}^{T}\Omega^{-1}\vec{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Frontera de Mínima Varianza
+\end_layout
+
+\begin_layout Standard
+Según la teoría de portafolio todos los inversionistas 
+\begin_inset Quotes eld
+\end_inset
+
+deberían
+\begin_inset Quotes erd
+\end_inset
+
+ estar en esta línea, es decir, que estos según su aversión al riesgo.
+\end_layout
+
+\begin_layout Standard
+Como la frontera de mínima varianza es una línea, solo con poseer dos portafolio
+s que se encuentren en esta línea y no sean iguales, es posible 
+\begin_inset Quotes eld
+\end_inset
+
+generar
+\begin_inset Quotes erd
+\end_inset
+
+ mediante una combinación lineal de estos, todos los portafolio 
+\begin_inset Quotes eld
+\end_inset
+
+posibles
+\begin_inset Quotes erd
+\end_inset
+
+ en la frontera.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot [color=green,domain=0:5] { 0.683012702*x+2  };
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addlegendentry {Carteras de Mercado u Óptimas};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot [color=blue,domain=2.000001:5] { sqrt(x-2)+3 };
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addlegendentry {Carteras de Mínima Varianza};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot [black, mark = *] coordinates {( 0,2 )};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[draw=black,coordinate,pin=right:{Tasa Libre de Riesgo}]
+\end_layout
+
+\begin_layout Plain Layout
+
+	at (axis cs:0,2){};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot [black, mark = *] coordinates {( 2.535898385,3.732050808)};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[coordinate,pin=above:{Cartera de Mercado}]
+\end_layout
+
+\begin_layout Plain Layout
+
+	at (axis cs:2.535898385,3.732050808 ){};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot [black, mark = *] coordinates {( 2.25,3.5 )};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[coordinate,pin=right:{$ 
+\backslash
+beta=d/dx $}]
+\end_layout
+
+\begin_layout Plain Layout
+
+	at (axis cs:2.25,3.5 ){};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mbox{Contribución al Riesgo}$
+\end_inset
+
+CRI Es la cantidad de riesgo que el activo 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ expresada en volatilidad, adiciona a la cartera.
+ En el equilibrio (
+\begin_inset Formula $\omega_{óptimo}$
+\end_inset
+
+) los aportes en riesgo que todos los activos realizan son iguales, en el
+ gráfico anterior la contribución al riesgo de la cartera es el 
+\begin_inset Formula $\beta$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+CR_{i}=\beta_{i}\sigma\qquad CR_{i}=\frac{\sigma_{im}}{\sigma_{m}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teorema de los dos Fondos
+\end_layout
+
+\begin_layout Standard
+Con cualquier par de activos diferentes, que se encuentren en la frontera
+ de mínima varianza, generan mediante una combinación lineal de estos, toda
+ la frontera.
+ Es preciso mencionar que se considera una cartera de activos como un activo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega_{p}=g+h\cdot r_{p}\qquad r_{p}=\omega_{p}^{T}\cdot r
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+de esta forma siempre se puede encontrar un 
+\begin_inset Formula $Q$
+\end_inset
+
+ tal que: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\omega_{p}^{T}\Omega\omega_{p}=0\quad\Rightarrow\quad\mbox{Cero covarianza de }P
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El cero covarianza de 
+\begin_inset Formula $P$
+\end_inset
+
+ cumple el rol del activo libre de riesgo cuando este no existe.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{Q}=r_{\mbox{cero covarianza de p}}+\beta_{QP}\left(r_{p}-r_{\mbox{cero covarianza de p}}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Simulación de Precios
+\end_layout
+
+\begin_layout Standard
+El espacio de los precios es muy difícil de simular, pero dónde se tienen
+ más herramientas para tener simulaciones más certeras, se encuentra en
+ el espacio de los retornos.
+ De esta forma los precios son simulados como las consecuencias de una secuencia
+ de 
+\begin_inset Quotes eld
+\end_inset
+
+retornos
+\begin_inset Quotes erd
+\end_inset
+
+ simulados.
+\end_layout
+
+\begin_layout Section
+Simulación de Retornos.
+\end_layout
+
+\begin_layout Standard
+Para simular los precios se utilizan retornos logarítmicos, esto se debe
+ a que principalmente para poder tener una operatoria sencilla entre los
+ retornos.
+ Dado que son retornos logarítmicos se pueden sumar, en cambio en el espacio
+ de los retornos porcentuales, los retornos se deben multiplicar para formar
+ la serie.
+ De esta forma lo utilizado por simplicidad de operatoria son los retornos
+ logarítmicos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ln\left(\frac{Precio_{t+1}}{Precio_{t}}\right)=\tilde{R_{t}}\Rightarrow\tilde{P}_{t+1}=P_{t}e^{\tilde{R_{t}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Los retornos se consideran como aleatorios, de esta forma de los datos anteriore
+s se utiliza, la esperanza de los retornos pasados como una 
+\begin_inset Quotes eld
+\end_inset
+
+tendencia
+\begin_inset Quotes erd
+\end_inset
+
+.
+ La tendencia es referencial 
+\begin_inset Quotes eld
+\end_inset
+
+una aproximación
+\begin_inset Quotes erd
+\end_inset
+
+, es importante destacar que 
+\emph on
+retornos pasados no garantizan retornos futuros.
+
+\emph default
+ De esta forma los retornos siguen una normal 
+\begin_inset Formula $\tilde{R}_{t}\rightsquigarrow N\left(\mu,\sigma^{2}\right)$
+\end_inset
+
+ luego los retornos quedan descritos de la siguiente forma:
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+El 
+\begin_inset Formula $\tilde{Z}_{t}$
+\end_inset
+
+distribuye normal 
+\begin_inset Formula $N\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Retorno_{t}=\mu+\tilde{Z}_{t}\sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cabe destacar la relación entre las varianzas de los retornos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Var\left[\tilde{R}_{t}+\tilde{R}_{t+1}\right]=Var\left[\tilde{R}_{t}\right]+Var\left[\tilde{R}_{t+1}\right]+2Cov\left[\tilde{R}_{t};\tilde{R_{t+1}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para finanzas las covarianzas entre los retornos no se consideran 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $Cov\left[\tilde{R}_{t};\tilde{R_{t+1}}\right]=0$
+\end_inset
+
+.
+ En el caso que la covarianza entre dos precios sea distinta de cero, entonces:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Cov\left[\tilde{P}_{t};\tilde{P}_{t+1}\right]\neq0\rightarrow Cov\left[P_{t}e^{\tilde{R}_{t}};P_{t}e^{\tilde{R}_{t}+\tilde{R}_{t+1}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego si se desea calcular la probabilidad de que un precio alcance un determina
+do precio 
+\begin_inset Formula $K$
+\end_inset
+
+, en un horizonte de tiempo de 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Esto último calculado es equivalente a Black and Shoes.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left[\tilde{P}_{t+T}\leq K\right]=P\left[\tilde{Z}\leq\frac{Ln\left(\frac{K}{P_{t}}\right)-\mu t}{\sigma\sqrt{T}}\right]\longrightarrow N\left[\frac{Ln\left(\frac{K}{P_{t}}\right)-\mu t}{\sigma\sqrt{T}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left[\tilde{P}_{t+T}\geq K\right]=1-N\left[\frac{Ln\left(\frac{K}{P_{t}}\right)-\mu t}{\sigma\sqrt{T}}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El retorno logarítmico entre dos precios, que distan en más de un periodo,
+ es equivalente a la suma de los retornos logarítmicos de los períodos.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Ln\left(\frac{P_{t+30}}{P_{t}}\right)=\sum_{i=t}^{t+30}\tilde{R}_{i}=\tilde{R}_{t}+\tilde{R}_{t+1}+\tilde{R}_{t+2}+\tilde{R}_{t+3}+...+\tilde{R}_{t+30}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recordar que como los retornos 
+\begin_inset Formula $\tilde{R}_{i}$
+\end_inset
+
+son retornos normales, entonces 
+\begin_inset Formula $E\left(\tilde{R}_{i}+\tilde{R}_{i+1}\right)=2\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Este tipo de modelos no contempla situaciones como que al aumentar el precio,
+ aumente la competencia, para este tipo de casos se utilizan modelos con
+ reversión a la media.
+\end_layout
+
+\begin_layout Section
+Simulación de Precios
+\end_layout
+
+\begin_layout Standard
+Como vimos con anterioridades se pueden simular trayectorias de precio mediante
+ la utilización de una serie de retornos y una condición de borde o precio
+ inicial conocido.
+\end_layout
+
+\begin_layout Standard
+De esta forma los precios simulados para 
+\begin_inset Formula $T$
+\end_inset
+
+ períodos más, partiendo de 
+\begin_inset Formula $P_{0}$
+\end_inset
+
+un precio conocido, con una tendencia de 
+\begin_inset Formula $\mu$
+\end_inset
+
+(se puede calcular de los datos históricos) y una varianza 
+\begin_inset Formula $\sigma$
+\end_inset
+
+(también calculada desde los datos históricos).
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+El 
+\begin_inset Formula $\tilde{Z}_{t}$
+\end_inset
+
+distribuye normal 
+\begin_inset Formula $N\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tilde{P}_{t+T}=P_{t}e^{\left(\mu_{precio}-\sigma_{precio}^{2}/2\right)T+\sigma\tilde{Z}\sqrt{T}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+También es posible obtener el precio en 
+\begin_inset Formula $t+T$
+\end_inset
+
+ utilizando los retornos logarítmicos (
+\begin_inset Formula $\tilde{R}_{i}$
+\end_inset
+
+) entre 
+\begin_inset Formula $t$
+\end_inset
+
+ y 
+\begin_inset Formula $T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tilde{P}_{t+T}=P_{t}e^{\sum\tilde{R}_{i}}=P_{t}e^{\tilde{R}_{t}+\tilde{R}_{t+1}+\tilde{R}_{t+2}+...+\tilde{R}_{t+30}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para transformar, por ejemplo 
+\begin_inset Formula $\sigma_{precio}$
+\end_inset
+
+ anual a 
+\begin_inset Formula $\sigma_{precio}$
+\end_inset
+
+ mensual hay que dividir por la raíz de 12.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{\mbox{precio mensual}}^{2}=\frac{\sigma_{\mbox{precio anual}}^{2}}{\sqrt{12}}\qquad\sigma_{\mbox{precio diario}}^{2}=\frac{\sigma_{\mbox{precio anual}}^{2}}{\sqrt{360}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Modelos y Procesos de Precios
+\end_layout
+
+\begin_layout Section
+Proceso Browniano Aritmético
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\triangle Ln\left(P_{t}\right)=\mu\bigtriangleup t+\sigma\bigtriangleup t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\bigtriangleup Z=\varepsilon\sqrt{\bigtriangleup t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Esperanza\left[\bigtriangleup Z\right]=0\qquad Varianza\left[\bigtriangleup Z\right]=\bigtriangleup t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego el precio viene dado por la siguiente expresión:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(t\right)=P\left(0\right)e^{\mu T+\sigma Z\left(t\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Lema de Ito
+\end_layout
+
+\begin_layout Standard
+El lema de Ito es un símil de la regla de la cadena, pero para el cálculo
+ estocástico.
+ Éste es utilizando para derivar un proceso estocástico de precios.
+\end_layout
+
+\begin_layout Standard
+Considerando:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dX=a\left(x,t\right)dt+b\left(x,t\right)dz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dF=\left[\frac{dF}{dx}a\left(x,t\right)+\frac{dF}{dt}+\frac{1}{2}\frac{d^{2}F}{dx^{2}}b^{2}(x,t)\right]dt+\frac{dF}{dx}b(x,t)dz
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Siendo el primer término la tendencia y el segundo la volatilidad
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+F(s,t)\Rightarrow dF=\frac{\delta f}{\delta s}ds+\frac{\delta f}{\delta t}dt+\frac{1}{2}\frac{\delta^{2}f}{\delta^{2}s^{2}}\sigma^{2}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aplicando este lema al proceso Browniano Geométrico, se puede obtener el
+ siguiente resultado, considerando 
+\begin_inset Formula $S$
+\end_inset
+
+ como el Precio.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dLog(S)=f''\left(S\right)dS+\frac{1}{2}f'''\left(S\right)S^{2}\sigma^{2}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Rightarrow\frac{1}{S}\left(\sigma SdB+\mu Sdt\right)-\frac{1}{2}\sigma^{2}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Rightarrow\sigma dB+\left(\mu-\frac{\sigma^{2}}{2}\right)t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lo que justamente llega como resultado al proceso Borwniano Geométrico
+\end_layout
+
+\begin_layout Section
+Proceso Browniano Geométrico
+\end_layout
+
+\begin_layout Standard
+Este proceso describe posibles trayectorias en base a una trayectoria 
+\begin_inset Formula $\mu$
+\end_inset
+
+y una desviación estándar conocida 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, una posible trayectoria de precio, esta trayectoria utiliza una componente
+ aleatoria, con esta componente se simula el comportamiento 
+\begin_inset Quotes eld
+\end_inset
+
+aleatorio
+\begin_inset Quotes erd
+\end_inset
+
+ del mercado.
+\end_layout
+
+\begin_layout Standard
+A corto plazo el modelo tiene baja certeza, pero a largo plazo, se pueden
+ utilizar simulaciones de Montecarlo (Repetir el proceso aleatorio una gran
+ número de veces) para obtener posibles precios.
+ Apelando a la ley de los grandes números y a que el número de repeticiones
+ del ejercicio es lo suficientemente grande, se puede realizar estimaciones
+ de normalidad.
+\end_layout
+
+\begin_layout Standard
+Considerando 
+\begin_inset Formula $S_{t}$
+\end_inset
+
+ como el precio de un determinado activo en el momento
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S_{t}=S_{0}e^{\left(\sigma B_{t}+\left(\mu-\frac{\sigma^{2}}{2}\right)t\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si el movimiento es definido como 
+\begin_inset Formula $R_{t}=e^{X\left(t\right)}$
+\end_inset
+
+entonces su esperanza es igual a 
+\begin_inset Formula $e^{\frac{t}{2}}$
+\end_inset
+
+ y su varianza 
+\begin_inset Formula $e^{t}\left(e^{t}-1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Modelo EMWA 
+\emph on
+(Exponential movin weighted average)
+\end_layout
+
+\begin_layout Standard
+Esta serie va 
+\begin_inset Quotes eld
+\end_inset
+
+olvidando
+\begin_inset Quotes erd
+\end_inset
+
+ los datos a medida que el tiempo pasa, de esta forma se ve influenciada
+ principalmente por lo sucedido más recientemente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{t+1}^{2}=\lambda\sigma_{t}^{2}+\left(1-\lambda\right)\left(R_{t}-\mu\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Modelo de regresión a la media
+\end_layout
+
+\begin_layout Standard
+Este modelo considera que los retornos oscilan en torno a una 
+\begin_inset Quotes eld
+\end_inset
+
+media de crecimiento
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Considerando 
+\begin_inset Formula $a$
+\end_inset
+
+ como la velocidad con que se llega al largo plazo y 
+\begin_inset Formula $b$
+\end_inset
+
+ el largo plazo, en dónde se cumple un estado estacionario.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{t+\bigtriangleup t}=R_{t}+a\left(b-R_{t}\right)\bigtriangleup t+\sigma\sqrt{\bigtriangleup t}N\left(0,1\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Series de Tiempo
+\end_layout
+
+\begin_layout Section
+Autoregresivos 
+\begin_inset Formula $AR\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=\alpha y_{t-1}+\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{0}=\alpha h+\epsilon_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=\alpha^{t}h+\sum_{j=0}^{t-1}\alpha^{j}\epsilon_{j-1}+\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un estimador de 
+\begin_inset Formula $y_{t+1}$
+\end_inset
+
+ sería:
+\begin_inset Formula $\qquad\hat{y}_{t+1}=\alpha y_{t}+Esperanza\left[\epsilon_{t+1}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si la varianza de 
+\begin_inset Formula $\epsilon_{t}=\sigma^{2}$
+\end_inset
+
+ entonces la varianza de 
+\begin_inset Formula $y_{t}$
+\end_inset
+
+ : 
+\begin_inset Formula $\qquad\gamma_{0}=\frac{\sigma^{2}}{1+\alpha^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta forma la autocovarienza es de la forma: 
+\begin_inset Formula $\qquad\gamma_{i+1}=\alpha\gamma_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Coeficiente de autocorrelación: 
+\begin_inset Formula $\qquad\rho_{i}=\alpha^{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usando el operador 
+\emph on
+retardo
+\emph default
+ (L) : 
+\begin_inset Formula $\qquad y_{t}=\left(1-\alpha L\right)^{-1}\epsilon_{t}\qquad\left|\alpha\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Autoregresivos 
+\begin_inset Formula $AR\left(2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=\phi_{1}y_{t-1}+\phi_{2}y_{t-2}+\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando el operador 
+\emph on
+retardo
+\emph default
+ (L): 
+\begin_inset Formula $\qquad y_{t}=\left(1+\phi_{1}L\right)^{-1}\epsilon_{t}\qquad\left|\phi_{1}\right|,\left|\phi_{2}\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Varianza\left(y_{t}\right)=\gamma_{0}\qquad Covarianza\left(\gamma_{t};\gamma_{t+1}\right)=\gamma_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Autoregresivos 
+\begin_inset Formula $AR\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=\phi_{1}y_{t-1}+\ldots+\phi_{n}y_{t-n}+\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando el operador 
+\emph on
+retardo
+\emph default
+ (L):
+\begin_inset Formula $\qquad y_{t}=\left(1+\phi_{1}L+\phi_{2}L^{2}+\ldots+\phi_{n}L^{n}\right)^{-1}\epsilon_{t}\qquad\left|\phi_{1}\right|,\ldots,\left|\phi_{n}\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Función de autocorrelación 
+\begin_inset Formula $\rho$
+\end_inset
+
+: 
+\begin_inset Formula $\qquad\rho_{k}=\phi_{1}\rho_{k-1}+\phi_{2}\rho_{k-2}+\ldots+\phi_{n}\rho_{k-n}\qquad k>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego matricialmente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi'=\left[\phi_{1},\ldots,\phi_{n}\right]\quad\rho=\left[\rho_{1},\ldots,\rho_{n}\right]\quad R=\left[\begin{array}{cccc}
+1 & \rho_{1} & \cdots & \rho_{n-1}\\
+\rho_{1} & 1 &  & \rho_{n-2}\\
+\vdots &  & \ddots & \vdots\\
+\rho_{n-1} & \rho_{n-2} & \cdots & 1
+\end{array}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\rho=R\cdot\phi
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De esta forma si queremos obtener los valores de 
+\begin_inset Formula $\phi$
+\end_inset
+
+ para un proceso tenemos que resolver la ecuación anteriormente mencionada.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{\phi}=R^{-1}\cdot\rho
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Media Móviles 
+\begin_inset Formula $MA\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=\epsilon_{t}+\phi\epsilon_{t-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=\left(1+\phi L\right)\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Esperanza\left(y_{t}\right)=0\qquad Varianza\left(y_{t}\right)=\sigma^{2}+\phi^{2}\sigma^{2}=\left(1+\phi^{2}\right)\sigma^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Covarianza\left(y_{t};y_{t-1}\right)=\phi\sigma^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este proceso es llamado como 
+\emph on
+
+\begin_inset Quotes eld
+\end_inset
+
+pérdidas de memoria
+\begin_inset Quotes erd
+\end_inset
+
+,
+\emph default
+ o 
+\begin_inset Quotes eld
+\end_inset
+
+mal amor
+\begin_inset Quotes erd
+\end_inset
+
+, esto se debe a que mientras mayor sea la distancia en tiempo, menor es
+ la influencia de ese evento en la serie.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\gamma_{1}=\phi\sigma^{2}\qquad\gamma_{2}=0\qquad\rho_{1}=\frac{\gamma_{1}}{\gamma_{0}}\qquad\rho_{2},\ldots,\rho_{\infty}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Medias Moviles 
+\begin_inset Formula $MA\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+El caso de un 
+\begin_inset Formula $MA\left(n\right)$
+\end_inset
+
+, se diferencia de un 
+\begin_inset Formula $MA\left(1\right)$
+\end_inset
+
+ en que el valor de 
+\begin_inset Formula $\rho$
+\end_inset
+
+ son diferentes de cero entre 
+\begin_inset Formula $\rho_{1}\,\ldots\,\rho_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Autoregresivos con Medias Móviles 
+\begin_inset Formula $ARMA(P;Q)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Un proceso 
+\begin_inset Formula $ARMA\left(P,Q\right)$
+\end_inset
+
+ corresponde a la suma de dos procesos un 
+\begin_inset Formula $AR\left(P\right)$
+\end_inset
+
+ y un 
+\begin_inset Formula $MA\left(Q\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}-\alpha_{1}y_{t-1}-\alpha_{2}y_{t-2}-\ldots-\alpha_{p}y_{t-p}=\epsilon_{t}+\phi_{1}\epsilon_{t-1}+\phi_{2}\epsilon_{t-2}+\ldots+\phi_{2}\epsilon_{t-q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=\alpha+\sum_{j=1}^{P}\alpha_{j}\cdot y_{t-j}+\sum_{i=1}^{Q}\phi_{i}\cdot\epsilon_{i}+\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Utilizando el operador letargo la expresión es de la forma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=\alpha+\sum_{j=1}^{P}\alpha_{j}\cdot L^{j}\cdot y_{t}+\sum_{i=1}^{Q}\phi_{i}\cdot L^{i}\cdot\epsilon_{i}+\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Autoregresivos Integrados con Medias Móviles 
+\begin_inset Formula $ARIMA(P;D:Q)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Este proceso considera un modelo 
+\begin_inset Formula $ARMA\left(P;Q\right)$
+\end_inset
+
+ que adicionalmente posee la derivada 
+\begin_inset Formula $\bigtriangleup^{D}$
+\end_inset
+
+del proceso, con 
+\begin_inset Formula $\bigtriangleup y_{t}=y_{t}-y_{t-1}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{t}=-\left(\bigtriangleup^{D}y_{t}-y_{t}\right)+\alpha_{o}+\sum_{j=1}^{P}\alpha_{j}\cdot\bigtriangleup^{D}y_{t-j}-\sum_{i=1}^{Q}\phi_{i}\cdot\epsilon_{t-i}+\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\alpha\left(L\right)\bigtriangleup^{D}y_{t}=\phi_{0}+\phi\left(L\right)\epsilon_{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si este proceso es estacionario, entonces se cumple que: 
+\begin_inset Formula $Esperanza\left(y_{y}\right)=Esperanza\left(y_{t-1}\right)$
+\end_inset
+
+ y 
+\begin_inset Formula $Varianza\left(y_{t}\right)=Varianza\left(y_{t-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Riesgo
+\end_layout
+
+\begin_layout Standard
+El riego es la 
+\emph on
+perdida de valor de un activo
+\emph default
+, que es medido como el peor caso posible, este caso es medido tanto en
+ un porcentaje 
+\begin_inset Quotes eld
+\end_inset
+
+En el peor caso se perderán un 30% de la inversión inicial
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Otra forma de medir el riego es mediante una pérdida económica, esto es
+ generalmente utilizado en las mesas de dinero, de esta forma se mediría
+ como 
+\begin_inset Quotes eld
+\end_inset
+
+En el peor caso se perderán 5 millones de dólares
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Tipos de Riesgo
+\end_layout
+
+\begin_layout Description
+Mercado Este es un riego determinado por el mercado (País) en dónde el activo
+ habita, sus principales factores son el precio y la liquidez.
+\end_layout
+
+\begin_layout Description
+Crediticio Este riesgo se ve principalmente cuando una institución o una
+ empresa, financia parte de su deuda generando más deuda.
+ Es decir si para pagar un crédito necesita pedir parte de los pago en forma
+ de un crédito (Roll Over) y este es negado, la institución no podrá pagar
+ sus deudas.
+\end_layout
+
+\begin_layout Description
+Operacional Principalmente es dado por tanto pérdidas en infraestructura,
+ como en su capital humano 
+\begin_inset Quotes eld
+\end_inset
+
+organizacional
+\begin_inset Quotes erd
+\end_inset
+
+, de esta forma si una empresa por un accidente perdiese a todos sus directivos,
+ sería difícil poder volver a organizar y gestionar la empresa tal como
+ estaba antes del accidente.
+\end_layout
+
+\begin_layout Standard
+Cuando se calcula el riesgo del tipo de cambio, es necesario calcular los
+ 
+\begin_inset Formula $VaR$
+\end_inset
+
+ individuales de las tasas tanto en peso, dolar, como el tipo de cambio
+ del día.
+ En el caso que se no se tenga el valor de la tasa para el día solicitado,
+ pero si para una fecha anterior y posterior, es posible realizar una interpolac
+ión.
+ Como se debe realizar una interpolación, se debe también considerar las
+ tasas tanto de las fechas anteriores como posteriores al día de vencimiento.
+\end_layout
+
+\begin_layout Section
+Hábitat
+\end_layout
+
+\begin_layout Standard
+Es el lugar en donde vive o nace una inversión, normalmente fijado por un
+ tipo de moneda específico.
+ Es importante destacar que dependiendo del hábitat de los activos es posible
+ que la covarianza entre estos nos sume o reste 
+\begin_inset Formula $VaR_{i}$
+\end_inset
+
+ esto se debe al siguiente fenómeno, si consideramos dos activos uno en
+ CLP y otro en USD entonces, si el hábitat es:
+\end_layout
+
+\begin_layout Description
+CLP Si el precio del USD sube se valorizan los en USD, de esta forma la
+ covarianza positiva es la que perjudica en mayor medida el valor de la
+ cartera.
+\end_layout
+
+\begin_layout Description
+USD Si el precio del USD sube se desvalorizan los activos en CLP, de esta
+ forma la covarianza negativa afecta en mayor medida el valor de la cartera.
+\end_layout
+
+\begin_layout Section
+Value at Risk 
+\begin_inset Formula $VaR$
+\end_inset
+
+ (
+\emph on
+Valor en Riesgo
+\emph default
+)
+\end_layout
+
+\begin_layout Standard
+Se entiende como el 
+\begin_inset Formula $VaR$
+\end_inset
+
+ como una medida de 
+\emph on
+pérdida
+\emph default
+.
+ Esta medida puede ser tanto en un valor porcentual, como en un valor monetario.
+ Dado que no sabemos con un 100% de certeza cuál será el valor de nuestra
+ cartera, se utilizan modelos estadísticos, de simulación de precios, como
+ los anteriormente descritos, para calcular con un nivel de certeza (comúnmente
+ un 95%).
+\end_layout
+
+\begin_layout Description
+Sensibilidad: Cambio en el valor de la cartera, cuando uno de los factores
+ de riesgo es modificado.
+\begin_inset Formula 
+\[
+\triangle V=\frac{\partial V}{\partial f_{1}}\triangle f_{1}+\frac{\partial V}{\partial f_{2}}\triangle f_{2}+...+\frac{\partial V}{\partial f_{n}}\triangle f_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Rightarrow\frac{\triangle V}{V}=\frac{S_{1}f_{1}}{V}\left(\frac{\triangle f_{1}}{f_{1}}\right)+\frac{S_{2}f_{2}}{V}\left(\frac{\triangle f_{2}}{f_{2}}\right)+...+\frac{S_{n}f_{n}}{V}\left(\frac{\triangle f_{n}}{f_{n}}\right)\rightsquigarrow N\left(\mu_{Z},\sigma_{Z}^{2}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mu_{Z}=W^{T}\mu
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\sigma_{Z}^{2}=W^{T}\Omega W
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\left[\Omega\right]_{ij}=\sigma_{i}\sigma_{j}\rho_{ij}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego la medida de riesgo es equivalente a el cambio más desfavorable del
+ valor de la cartera con un nivel de certeza dados.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P\left(\triangle V\geq VaR\right)=P\left(\frac{\triangle V}{V}\geq\frac{VaR}{V}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{VaR}{V}=\mu_{Z}-K_{p}\sigma_{Z}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $K_{p}=N^{-1}\left(1-P\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $VaR$
+\end_inset
+
+ Individual
+\end_layout
+
+\begin_layout Standard
+Éste corresponde a el 
+\begin_inset Formula $VaR$
+\end_inset
+
+ de cada uno de los componentes de 
+\begin_inset Quotes eld
+\end_inset
+
+factores
+\begin_inset Quotes erd
+\end_inset
+
+ de riesgo del un determinado activo o cartera de activos.
+\end_layout
+
+\begin_layout Standard
+El 
+\begin_inset Formula $VaR$
+\end_inset
+
+ de un activo individual 
+\begin_inset Formula $i$
+\end_inset
+
+, considerando como 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+como la elasticidad de 
+\begin_inset Formula $V$
+\end_inset
+
+ al factor 
+\begin_inset Formula $i$
+\end_inset
+
+:
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+
+\emph on
+\begin_inset Formula $K_{p}$
+\end_inset
+
+
+\emph default
+ es el nivel de confianza, normalmente 1,64.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+VaR_{i}=ValorPresente\cdot e_{i}\left(\mu_{i}-K_{p}\sigma_{i}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Considerando que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+e_{i}=\frac{\left(\frac{\triangle V}{V}\right)}{\left(\frac{\triangle f_{i}}{f_{i}}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+VaR_{i}=ValorPresnete\cdot K_{p}\sqrt{\triangle t}\sigma_{P}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Es importante que existen dos tipos de sigmas, 
+\begin_inset Formula $\sigma_{p}$
+\end_inset
+
+el que corresponde a la volatilidad de precio y 
+\begin_inset Formula $\sigma_{t}$
+\end_inset
+
+ el que corresponde a la volatilidad de tasa.
+\end_layout
+
+\begin_layout Subsection
+Aproximación
+\end_layout
+
+\begin_layout Standard
+El 
+\begin_inset Formula $VaR$
+\end_inset
+
+ se puede aproximar como:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+VaR_{i}=ValorPresnete\cdot K_{p}\sigma_{P}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto es por que para calcular el 
+\begin_inset Formula $VaR$
+\end_inset
+
+ se debe conocer la distribución de probabilidad del cambio de precio para
+ el factor 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ El cálculo de dicha expresión está dado por la asumción de normalidad en
+ la distribución de los retornos, con media cero y desviación 
+\begin_inset Formula $\sigma$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Luego Para cambios pequeños de 
+\begin_inset Formula $\Delta V$
+\end_inset
+
+ se puede considerar:
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Se utiliza la aproximación 
+\begin_inset Formula $e^{x}\thickapprox1+x$
+\end_inset
+
+ para 
+\begin_inset Formula $x$
+\end_inset
+
+ pequeños.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{f}=V_{i}e^{K_{p}\sigma}\approx V_{i}+V_{i}\cdot K_{p}\cdot\sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+V_{f}-V_{i}=VaR=V_{i}\cdot K_{p}\cdot\sigma
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $VaR$
+\end_inset
+
+ Total
+\end_layout
+
+\begin_layout Standard
+Usando la notación matricial, con 
+\begin_inset Formula $\Omega$
+\end_inset
+
+la matriz de covarianzas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+VaR_{T}^{2}=VaR_{i}\Omega VaR_{i}
+\]
+
+\end_inset
+
+
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+Recordar restar o sumar 2 veces la covarianza dependiendo de cual sea el
+ peor caso.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+VaR_{T}=\sqrt{VaR_{1}+VaR_{2}+2\rho_{1,2}VaR_{1}VaR_{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $VaR$
+\end_inset
+
+ Histórico
+\end_layout
+
+\begin_layout Standard
+Este método emplea datos históricos, de estos datos se obtienen los retornos
+ para luego ordenarlos en un histograma de retornos, este histograma representa
+ el abanico de posibilidades históricas de retornos.
+ Dado estos datos se pueden obtener valores para los peores escenarios pasados.
+\end_layout
+
+\begin_layout Standard
+Es importante destacar que retornos pasados no garantizan retornos futuros,
+ de esta forma no es posible garantizar que el peor escenario pasado, pueda
+ ser el peor escenario actual.
+ Dado que todas las crisis económicas se han gestado por factores diferentes.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $VaR$
+\end_inset
+
+ Paramétrico
+\end_layout
+
+\begin_layout Standard
+Este método emplea un modelo para los retornos que distribuye 
+\begin_inset Quotes eld
+\end_inset
+
+normal
+\begin_inset Quotes erd
+\end_inset
+
+ con esto se puede estimar en base a los datos anteriores los valores de
+ 
+\begin_inset Formula $\mu$
+\end_inset
+
+y 
+\begin_inset Formula $\sigma$
+\end_inset
+
+, para describir una normal de retornos y con ello el peor retorno a nivel
+ de confianza dado.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $VaR$
+\end_inset
+
+ Marginal
+\end_layout
+
+\begin_layout Standard
+Es el gradiente de 
+\begin_inset Formula $VaR$
+\end_inset
+
+ respecto a un componente generador de riego, es importante destacar que
+ si se encuentra un vector 
+\begin_inset Formula $VaR_{i}*$
+\end_inset
+
+que minimiza la 
+\begin_inset Formula $VaR_{T}$
+\end_inset
+
+, entonces los 
+\begin_inset Formula $\delta_{i}$
+\end_inset
+
+ son todos iguales.
+ Si esto no fuera así entonces existe una restricción activa por la que
+ se puede seguir avanzando para reducir el 
+\begin_inset Formula $VaR_{T}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\delta i=\frac{\delta Var_{t}}{\delta VaR_{i}}=\frac{1}{VaR}\left[\Omega VaR_{i}\right]_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $VaR$
+\end_inset
+
+ Incremental
+\end_layout
+
+\begin_layout Standard
+Este 
+\begin_inset Formula $VaR$
+\end_inset
+
+ mide el impacto que realiza cada factor de riesgo al incorporar los efectos
+ de las correlaciones.
+ En el caso en que un cambio en las tasas genera el mismo cambio en el 
+\begin_inset Formula $VaR$
+\end_inset
+
+ es cuando las correlaciones son iguales a 1.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+VaRIncremental_{i}=VaR_{i}\delta_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+VaR_{T}=\sum_{i}VaR_{i}\delta_{i}=\sum_{i}VaRIncremental_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Volatilidad Tasa
+\end_layout
+
+\begin_layout Standard
+Es la volatilidad con que la tasa de interés afecta las variaciones en el
+ precio de un activo.
+\end_layout
+
+\begin_layout Subsection
+Macaulay Duration
+\end_layout
+
+\begin_layout Standard
+La duration es como el punto en dónde se equilibran todos los flujos del
+ activo.
+ El equivalente al centro de masa en física.
+\end_layout
+
+\begin_layout Description
+MacaulayDuration 
+\begin_inset Formula $MacD=\sum_{i=1}^{n}t_{i}\frac{ValorPresenteFlujo_{i}}{ValorPresenteActivo}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+MacaulayDurationModified 
+\begin_inset Formula $ModD=\frac{MacD}{(1+\nicefrac{y_{k}}{k})}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+\begin_inset Formula $y_{k}$
+\end_inset
+
+ Yield to maturity, conocida como Tir (Tasa Interna de Retorno)
+\end_layout
+
+\begin_layout Description
+\begin_inset Formula $k$
+\end_inset
+
+ Número de periodos.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Volatilidad Tasa
+\end_layout
+
+\begin_layout Standard
+Es la volatilidad de la tasa (por ejemplo tasa de interés de mercado), de
+ esta forma se puede calcular 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{P}=-DurationModificada\cdot\tilde{R}\cdot\sigma_{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{P}=-\frac{Duration}{1+\tilde{R}}\tilde{R}\cdot\sigma_{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si definimos la variación de la tasa como el cambio del valor tasa respecto
+ al tiempo 
+\begin_inset Formula $\tilde{R}_{t+1}-\tilde{R}_{t}$
+\end_inset
+
+ no es necesario multiplicar por la tasa 
+\begin_inset Formula $R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{P}=-DurationModificada\cdot\sigma_{R}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Volatilidad de Precio
+\end_layout
+
+\begin_layout Standard
+Es la varianza que posee el precio, por ejemplo el precio del tipo de cambio
+ dólar preso (USD/CLP).
+ Considerando 
+\begin_inset Formula $f$
+\end_inset
+
+ como la variable de riesgo que influencia el precio, se puede calcular
+ la varianza en el precio explicada por el factor 
+\begin_inset Formula $f$
+\end_inset
+
+ de riesgo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{p}=\frac{\left(\frac{\triangle ValorPresente}{ValorPresente}\right)}{\left(\frac{\triangle f}{f}\right)}\sigma_{f}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Valorización Neutra al Riesgo
+\end_layout
+
+\begin_layout Standard
+Calibrar un árbol, la esperanza del árbol debe ser la esperanza del proceso
+ y la varianza del árbol debe ser la varianza del proceso.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu=e^{\sigma\sqrt{\bigtriangleup t}}\quad d=\frac{1}{u}\quad q=\frac{R^{\star}-d}{\mu-d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R^{\star}=e^{r\bigtriangleup t}=\left(1+r_{Lineal}t\right)=\left(1+r_{Compuesto}\right)^{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Probabilidad (Up-Down)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Pr\left(Suba\right)=\frac{r_{\mbox{Libre de Riesgo}}-d}{u-d}\qquad Pr\left(Baje\right)=1-Pr\left(Suba\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Black & Sholes
+\end_layout
+
+\begin_layout Standard
+Trabaja con tasas continuas.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Call=S\cdot N\left(d_{1}\right)-e^{rt}k\cdot N\left(d_{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Put=ke^{-rt}N\left(-d_{1}\right)-S\cdot N\left(-d_{1}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{1}=\frac{Ln\left(\frac{s}{k}\right)+\left(r+\frac{\sigma^{2}}{2}\right)T}{\sigma\sqrt{t}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+d_{2}=d_{1}-\sigma\sqrt{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Paridad Put-Call
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Put=Call-Strike+Ke^{-rT}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Black & Sholes: Tipo de Cambio
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Precio de la Call}=Call\cdot e^{-R^{\star}T}N\left(\phi_{1}\right)-Strike\cdot e^{-RT}N\left(\phi_{2}\right)\quad R^{\star}=Tasa\, extranjera.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{1}=Ln\left(\frac{Strike}{Call}\right)+\left(r-r^{\star}+\frac{\sigma^{2}}{s}\right)T
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi_{2}=\phi_{1}-\sigma\sqrt{T}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=C-Se^{-r^{\star}t}+Ke^{-rT}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Valorización con Árboles
+\end_layout
+
+\begin_layout Standard
+Para valorizar un instrumento con árboles, primero hay que verificar los
+ precios futuros, que se calculan mediante las diferenctes combinaciones
+ de 
+\begin_inset Formula $u$
+\end_inset
+
+ y 
+\begin_inset Formula $d$
+\end_inset
+
+, explicados al comienzo del capítulo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{level 1}=[level distance=2cm, sibling distance=2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{level 2}=[level distance=2cm, sibling distance=2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{bag} = [text width=4em, text centered]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{end} = [circle, minimum width=3pt,fill, inner sep=0pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[grow=right, sloped] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[bag] {$P$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		child {
+\end_layout
+
+\begin_layout Plain Layout
+
+			node[bag]{$P
+\backslash
+cdot d$}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$P
+\backslash
+cdot d 
+\backslash
+cdot d = P_{3} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$P
+\backslash
+cdot u
+\backslash
+cdot d = P_{2} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[above]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[below]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		child {
+\end_layout
+
+\begin_layout Plain Layout
+
+			node[bag]{$P
+\backslash
+cdot u$}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$P
+\backslash
+cdot u
+\backslash
+cdot d = P_{2} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$P
+\backslash
+cdot u 
+\backslash
+cdot u = P_{1} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[above]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[below]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+		};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego de construir el árbol se debe construir el árbol con valorización
+ neutra al riesgo, de esta forma se encuentran las probabilidades neutras
+ al riesgo imponiendo que el valor presente del árbol, utilizando las probabilid
+ades neutras al riesgo sea igual al precio strike actual.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{level 1}=[level distance=2cm, sibling distance=2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{level 2}=[level distance=2cm, sibling distance=2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{bag} = [text width=3em, text centered]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{end} = [circle, minimum width=4pt,fill, inner sep=0pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[grow=right, sloped] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[bag] {$P$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		child {
+\end_layout
+
+\begin_layout Plain Layout
+
+			node[bag]{$P_{5}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$P_{3} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {1-p}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$P_{2} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {p}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[above]{1-p}
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[below]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		child {
+\end_layout
+
+\begin_layout Plain Layout
+
+			node[bag]{$P_{4}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$P_{2} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {1-p}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$P_{1} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {p}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[above]{p}
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[below]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+		};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{4}=P_{2}\cdot(1-p)+P_{1}\cdot p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{5}=P_{3}\cdot(1-p)+P_{2}\cdot p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P=P_{4}\cdot p+P_{5}\cdot\left(1-p\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este caso las probabilidades corresponde a las vistas en anteriormente
+ 
+\begin_inset Quotes eld
+\end_inset
+
+
+\emph on
+Probabilidades (Up Down)
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cómo hacer un Árbol de 
+\emph on
+Factores de Descuento
+\end_layout
+
+\begin_layout Standard
+Este árbol es particularmente útil para evaluar tasas de interés.
+\end_layout
+
+\begin_layout Standard
+Primero necesitamos un árbol con las tasas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{level 1}=[level distance=2cm, sibling distance=2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{level 2}=[level distance=2cm, sibling distance=2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{bag} = [text width=3em, text centered]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{end} = [circle, minimum width=4pt,fill, inner sep=0pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[grow=right, sloped] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[bag] {$r_{0}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		child {
+\end_layout
+
+\begin_layout Plain Layout
+
+			node[bag]{$r_{2}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$r_{5} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$r_{4} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[above]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[below]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		child {
+\end_layout
+
+\begin_layout Plain Layout
+
+			node[bag]{$r_{1}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$r_{4} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$r_{3} $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[above]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[below]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+		};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Una vez se tiene el árbol de tasas de interés, podemos calcular el árbol
+ de factores de descuento.
+ Éste árbol, está compuesto por factores de descuento calculados en base
+ a la
+\emph on
+ correspondiente tasa de interés
+\emph default
+ de la rama.
+ Adicionalmente se requiere las 
+\emph on
+probabilidades neutras al riesgo
+\emph default
+ para valorizar en cada nodo.
+\end_layout
+
+\begin_layout Standard
+Suponiendo como 
+\begin_inset Formula $p$
+\end_inset
+
+ y 
+\begin_inset Formula $1-p$
+\end_inset
+
+, las probabilidades neutras al riesgo 
+\begin_inset Formula $f_{x}$
+\end_inset
+
+ como el factor de descuento de un nodo, entonces el árbol de factores de
+ descuento tiene la siguiente forma.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{level 1}=[level distance=2cm, sibling distance=2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{level 2}=[level distance=2cm, sibling distance=2cm]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{bag} = [text width=3em, text centered]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tikzstyle{end} = [circle, minimum width=4pt,fill, inner sep=0pt]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[grow=right, sloped] 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+node[bag] {$f_{0}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+		child {
+\end_layout
+
+\begin_layout Plain Layout
+
+			node[bag]{$f_{2}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$f_{5}=1 $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {$1-p$}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$f_{4}=1 $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {$p$}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[above]{$1-p$}
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[below]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+		}
+\end_layout
+
+\begin_layout Plain Layout
+
+		child {
+\end_layout
+
+\begin_layout Plain Layout
+
+			node[bag]{$f_{1}$}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$f_{4}=1 $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {$1-p$}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			child {
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[end, label=right:{$f_{3}=1 $}] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+					edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[above] {$p$}
+\end_layout
+
+\begin_layout Plain Layout
+
+					node[below] {}
+\end_layout
+
+\begin_layout Plain Layout
+
+			}
+\end_layout
+
+\begin_layout Plain Layout
+
+			edge from parent
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[above]{$p$}
+\end_layout
+
+\begin_layout Plain Layout
+
+				node[below]{}
+\end_layout
+
+\begin_layout Plain Layout
+
+		};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Típicamente 
+\begin_inset Formula $f_{3},f_{4},f_{5}$
+\end_inset
+
+ son uno, que corresponde al
+\emph on
+ face value 
+\emph default
+de un bono.
+ Luego para valorizar los nodos 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+y 
+\begin_inset Formula $f_{2}$
+\end_inset
+
+ se utilizan las tasas correspondiente para descontar, para este caso se
+ considero una tasa compuesta por el período entre el segundo y tercer nivel
+ de árbol, llamado 
+\begin_inset Formula $t$
+\end_inset
+
+ meses y se utilizan las probabilidades neutras el riesgo para calcular
+ la esperanza del nodo.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{1}=\frac{p\cdot f_{3}+\left(1-p\right)\cdot f_{4}}{\left(1+r_{1}\cdot\frac{1}{t}\right)^{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{2}=\frac{p\cdot f_{4}+\left(1-p\right)\cdot f_{5}}{\left(1+r_{2}\cdot\frac{1}{t}\right)^{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalmente el primer nodo tiene el valor de:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f_{0}=\frac{p\cdot f_{1}+\left(1-p\right)\cdot f_{2}}{\left(1+r_{0}\cdot\frac{1}{t}\right)^{1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Luego si queremos queremos valorizar un bono, simplemente multiplicamos
+ el 
+\emph on
+face value
+\emph default
+ por el factor de descuento 
+\begin_inset Formula $f_{0}$
+\end_inset
+
+.
+ Adicionalmente si queremos obtener la tasa de interés spot a 
+\begin_inset Formula $2t$
+\end_inset
+
+ tiempo más, entonces debemos hacer el siguiente cálculo:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{2\cdot t}=\left(\frac{1}{f_{0}}-1\right)*\frac{12}{2\cdot t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Riesgo de Crédito
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PE=Pr\left(default\right)\cdot Nocional\cdot EAD\cdot LGD\cdot M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+EAD Exposición al Default.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+LGD Tasa de recuperación por incumplimiento.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+M Número de personas en el fondo de invención.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+PT=PE+PI
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+PT Pérdida Total, también es aproximada como el 
+\begin_inset Formula $VaR$
+\end_inset
+
+ de la cartera, considerando el peor caso al 95% de confianza.
+\family typewriter
+
+\begin_inset Formula 
+\[
+PT=VaR=1,64\cdot\sigma_{cartera}\cdot\sqrt{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+PE Pérdida Esperada.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+PI Pérdida Inesperada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{individual}^{2}=P\left(1-p\right)\cdot N^{2}\cdot EAD^{2}\cdot LGD^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{individual}=\sqrt{p\left(1-p\right)}\cdot N\cdot EAD\cdot LGD
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{cartera}^{2}=\sum_{i}\sum_{j}\sigma_{i}\cdot\sigma_{j}\cdot\rho_{i,j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sigma_{cartera}^{2}=M\cdot\sigma_{individial}^{2}\left(1+\rho\left(M-1\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como la base de una cartera de préstamo es que los integrantes de ésta sean
+ similares, se considera que el 
+\begin_inset Formula $\sigma_{individual}^{2}$
+\end_inset
+
+ es igual para todos los integrantes de la cartera.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-23"
+
+\end_inset
+
+http://www.economia48.com/spa/d/lema-de-ito/lema-de-ito.htm
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-22"
+
+\end_inset
+
+http://en.wikipedia.org/wiki/It%C5%8D%27s_lemma
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-21"
+
+\end_inset
+
+http://en.wikipedia.org/wiki/Geometric_Brownian_motion
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-20"
+
+\end_inset
+
+http://www.uclm.es/area/gsee/aie/doctorado/Javier/tema3.pdf
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-19"
+
+\end_inset
+
+http://en.wikipedia.org/wiki/Bond_duration
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-18"
+
+\end_inset
+
+http://www.investopedia.com/terms/m/modifiedduration.asp
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-17"
+
+\end_inset
+
+http://www.investopedia.com/terms/y/yieldtomaturity.asp
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-16"
+
+\end_inset
+
+http://es.wikipedia.org/wiki/Tasa_interna_de_retorno
+\end_layout
+
+\end_body
+\end_document
