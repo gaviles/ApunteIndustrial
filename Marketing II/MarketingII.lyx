@@ -2,12 +2,37 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass book
+\textclass scrbook
 \begin_preamble
-\usepackage{pgfplots}
 \usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{pgfplots}
 \usepackage{pstricks}
 \usepackage{pst-func}
+
+%======== HEADER =========
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\rhead{\thepage}
+
+%======== FOOTER =========
+\cfoot{
+\includegraphics[height=0.30in]{logo483x100.png}
+ }
+\rfoot{\thepage}
+
+%======== LINES (ONLY ON HEADER) =========
+\renewcommand{\headrulewidth}{0.4pt}
+
+%======== DEFINES THE EMPTY STYLE ========
+
+\fancypagestyle{plain}{
+\cfoot{
+\includegraphics[height=0.30in]{logo483x100.png}
+ }
+\rfoot{\thepage}
+}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -61,14 +86,14 @@ figs-within-sections
 \headheight 0cm
 \headsep 0cm
 \footskip 0cm
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 2
+\tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 1
-\paperpagestyle fancy
+\papersides 2
+\paperpagestyle default
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -82,8 +107,16 @@ figs-within-sections
 Resumen Marketing II
 \end_layout
 
+\begin_layout Subject
+Este es un resumen realizado en bases a las clases de Marketing II, sin
+ ninguna relación con la universidad o el profesor que dicta el ramo.
+ Si es que se encuentra algún error por favor avisar a gustavo@gaviles.com.
+ Y antes de imprimir este documento verifica en www.gaviles.com que sea la
+ versión más reciente del resumen.
+\end_layout
+
 \begin_layout Author
-Gustavo Avilés Segovia
+Gustavo Avilés Segovia =]
 \end_layout
 
 \begin_layout Chapter

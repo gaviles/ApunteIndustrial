@@ -8,6 +8,7 @@
 \usetikzlibrary{trees}
 \usepackage{pgfplots}
 \usepackage{pstricks}
+\usepackage{pst-func}
 
 %======== HEADER =========
 \usepackage{fancyhdr}

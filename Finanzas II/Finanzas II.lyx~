@@ -26,7 +26,7 @@
 
 %======== DEFINES THE EMPTY STYLE ========
 
-\fancypagestyle{empty}{
+\fancypagestyle{plain}{
 \cfoot{
 \includegraphics[height=0.30in]{logo483x100.png}
  }
