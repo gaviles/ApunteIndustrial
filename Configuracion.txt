@@ -1,0 +1,25 @@
+
+====== Preambulo por defecto ======
+
+
+===================================
+
+====== Activar gnuplot ============
+
+tools-> preference -> File -> Handling Converters
+
+	Selecionar: Latex(pdflatex) -> PDF(pdflatex)
+	Convertidor: pdflatex -shell-escape $$i
+
+===================================
+
+====== Tipo de Documento ==========
+
+document -> configuration -> Class of Documment
+
+	Class of document: book (KOMA-Script)
+
+==================================
+
+
+
