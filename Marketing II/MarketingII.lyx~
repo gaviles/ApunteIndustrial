@@ -2,12 +2,36 @@
 \lyxformat 413
 \begin_document
 \begin_header
-\textclass book
+\textclass scrbook
 \begin_preamble
-\usepackage{pgfplots}
 \usepackage{tikz}
+\usetikzlibrary{trees}
+\usepackage{pgfplots}
 \usepackage{pstricks}
-\usepackage{pst-func}
+
+%======== HEADER =========
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\rhead{\thepage}
+
+%======== FOOTER =========
+\cfoot{
+\includegraphics[height=0.30in]{logo483x100.png}
+ }
+\rfoot{\thepage}
+
+%======== LINES (ONLY ON HEADER) =========
+\renewcommand{\headrulewidth}{0.4pt}
+
+%======== DEFINES THE EMPTY STYLE ========
+
+\fancypagestyle{plain}{
+\cfoot{
+\includegraphics[height=0.30in]{logo483x100.png}
+ }
+\rfoot{\thepage}
+}
 \end_preamble
 \use_default_options true
 \begin_modules
@@ -37,9 +61,20 @@ figs-within-sections
 \index_command default
 \paperfontsize default
 \spacing single
-\use_hyperref false
+\use_hyperref true
+\pdf_title "Marketing II"
+\pdf_author "Gustavo Avilés"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
 \papersize letterpaper
-\use_geometry true
+\use_geometry false
 \use_amsmath 1
 \use_esint 1
 \use_mhchem 1
@@ -61,14 +96,14 @@ figs-within-sections
 \headheight 0cm
 \headsep 0cm
 \footskip 0cm
-\secnumdepth 3
-\tocdepth 3
+\secnumdepth 2
+\tocdepth 2
 \paragraph_separation indent
 \paragraph_indentation default
 \quotes_language english
 \papercolumns 1
-\papersides 1
-\paperpagestyle fancy
+\papersides 2
+\paperpagestyle default
 \tracking_changes false
 \output_changes false
 \html_math_output 0
