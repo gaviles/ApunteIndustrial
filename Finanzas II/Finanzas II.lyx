@@ -8,12 +8,38 @@
 \usetikzlibrary{trees}
 \usepackage{pgfplots}
 \usepackage{pstricks}
+
+%======== HEADER =========
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{\leftmark}
+\rhead{\thepage}
+
+%======== FOOTER =========
+\cfoot{
+\includegraphics[height=0.30in]{logo483x100.png}
+ }
+\rfoot{\thepage}
+
+%======== LINES (ONLY ON HEADER) =========
+\renewcommand{\headrulewidth}{0.4pt}
+
+%======== DEFINES THE EMPTY STYLE ========
+
+\fancypagestyle{plain}{
+\cfoot{
+\includegraphics[height=0.30in]{logo483x100.png}
+ }
+\rfoot{\thepage}
+}
 \end_preamble
+\options Estilo de encabezado y pie elaborado
 \use_default_options true
 \begin_modules
 theorems-ams
 eqs-within-sections
 figs-within-sections
+customHeadersFooters
 \end_modules
 \maintain_unincluded_children false
 \language spanish
@@ -79,7 +105,7 @@ figs-within-sections
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle empty
 \tracking_changes false
 \output_changes false
 \html_math_output 0
