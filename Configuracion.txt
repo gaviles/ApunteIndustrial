@@ -59,3 +59,8 @@ document -> configuration -> Page design
 
 ==================================
 
+===== Binarios de GNUPLOT ========
+
+http://sourceforge.net/projects/gnuplot/files/gnuplot/testing%20%28pre-release%29%20binaries/
+
+==================================
