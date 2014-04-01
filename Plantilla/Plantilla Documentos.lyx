@@ -114,13 +114,12 @@ figs-within-sections
 \begin_body
 
 \begin_layout Title
-Resumen Gestión de Operaciones II
+Resumen <Ramo>
 \end_layout
 
 \begin_layout Subject
-Este es un resumen realizado en bases a las clases de Gestión de Operaciones
- II, sin ninguna relación con la universidad o el profesor que dicta el
- ramo.
+Este es un resumen realizado en bases a las clases de <Ramo>, sin ninguna
+ relación con la universidad o el profesor que dicta el ramo.
  Si es que se encuentra algún error por favor avisar a gustavo@gaviles.com.
  Y antes de imprimir este documento verifica en www.gaviles.com que sea la
  versión más reciente del resumen.
@@ -128,64 +127,6 @@ Este es un resumen realizado en bases a las clases de Gestión de Operaciones
 
 \begin_layout Author
 Gustavo Avilés Segovia =]
-\end_layout
-
-\begin_layout Chapter
-Introducción
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-ROA=\frac{\mbox{Retornor Operacionales}}{\mbox{Total de Activos}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-Turnover=\frac{\mbox{Ventas}}{\mbox{Total de Activos}}
-\]
-
-\end_inset
-
- 
-\begin_inset Formula 
-\[
-Margen=\frac{\mbox{Ventas - Costos Totales}}{\mbox{Ventas}}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Chapter
-Gestión de Operaciones en la Industria de Servicios
-\end_layout
-
-\begin_layout Section
-Modelos de Cola y Tiempos de Espera
-\end_layout
-
-\begin_layout Standard
-
-\end_layout
-
-\begin_layout Chapter
-Gestión de la Cadena de Suministro
-\end_layout
-
-\begin_layout Chapter
-Revenue Management
-\end_layout
-
-\begin_layout Chapter
-Logistíca de Transporte y Métodos de Optimización Avanzados.
 \end_layout
 
 \end_body
