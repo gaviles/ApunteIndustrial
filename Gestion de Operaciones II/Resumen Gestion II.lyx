@@ -173,6 +173,197 @@ Modelos de Cola y Tiempos de Espera
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Tiempo promedio de espera en la cola}=T_{q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Tiempo promedio de espera en el sistema}=T_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Número de usuarios en la Cola}=N_{q}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Número de usuarios en el Sistema}=N_{s}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Probabilidad de Retraso}=P_{d}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+El modelo Erlang (M/M/s)
+\end_layout
+
+\begin_layout Standard
+Este modelo asume que los agentes son identicos.
+ Atendidios en base a FIFO.
+ El tiempo se servicio es exponencial (distribución de Poison).
+ No existen abandonos en la cola.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mbox{Pribabilidad de tener (n) usuarios en la cola}=P(n)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(0)=\frac{1}{\sum_{n=0}^{s-1}\frac{\left(\lambda/\mu\right)^{n}}{n!}+\frac{\left(\lambda/\mu\right)^{s}}{s!}\left(\frac{1}{1-\rho}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(n)=\begin{cases}
+\frac{\left(\lambda/\mu\right)^{n}}{n!}P(0) & \mbox{, para }0\leq n\leq s\\
+\frac{\left(\lambda/\mu\right)^{n}}{s!s^{n-s}}P(0) & \mbox{, para }n>s
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Adicionalmente se define:
+\end_layout
+
+\begin_layout Itemize
+El mínimo número de servidores reuqeridos: 
+\begin_inset Formula $a=\frac{\lambda}{\mu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+La utilización del sistema: 
+\begin_inset Formula $\rho=\frac{\lambda}{s\cdot\mu}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Probabilidad de retraso: 
+\begin_inset Formula $P_{d}=\sum_{n=0}^{\infty}P(n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{d}=1-\sum_{n=0}^{s-1}P(n)=\frac{\frac{\left(\lambda/\mu\right)^{s}}{s!}\left(\frac{1}{1-\rho}\right)}{\sum_{n=0}^{s-1}\frac{\left(\lambda/\mu\right)^{n}}{n!}+\frac{\left(\lambda/\mu\right)^{s}}{s!}\left(\frac{1}{1-\rho}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Para un servidor unico:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(0)=1-\rho\qquad P(n)=\rho^{n}\left(1-\rho\right)\mbox{ para }n>0
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P_{d}=1-P(0)\qquad N=\frac{\rho}{1-\rho}\qquad N_{q}=P_{d}N=\frac{\rho^{2}}{1-\rho}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
 
 \end_layout
 
