@@ -340,31 +340,141 @@ P_{d}=1-P(0)\qquad N=\frac{\rho}{1-\rho}\qquad N_{q}=P_{d}N=\frac{\rho^{2}}{1-\r
 
 \end_inset
 
-
+En general:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
+N_{q}=P_{d}\frac{\rho}{1-\rho}\qquad N_{s}=N_{q}+\frac{\lambda}{\mu}\qquad T_{q}=\frac{N_{q}}{\lambda}\qquad T_{s}=T_{q}+\frac{1}{\mu}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Extensión del modelo Erlang de cola.
+\end_layout
+
+\begin_layout Standard
+El modleo Erland puede ser analizado como una proceso estocástico de Markov
+ en tiempo continuo.
+ Las métricas de desempeño puede ser resultas analíticamente.
+\end_layout
+
+\begin_layout Standard
+Considerando s, como el número de servidores y a, como el mínimo número
+ de servidores requeridos, entonces la diferencia 
+\begin_inset Formula $s-a$
+\end_inset
+
+ puede ser interpretada como la capacidad basal de servicio.
+\end_layout
+
+\begin_layout Standard
+Nivel de servicio: 
+\begin_inset Formula $SL=1-P_{d}\left(s,a\right)\exp\left(-\left(s-a\right)AWT\mu\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $=1-P_{d}\left(s,\rho\right)\exp\left(-s\left(1-\rho\right)AWT\mu\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tiempo promedio de espera (AWT):
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
+T_{q}=\frac{P_{D}\left(s,a\right)}{\mu\left(s-a\right)}=\frac{P_{d}\left(s,\rho\right)}{\mu s\left(1-\rho\right)}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Probabilidad de retraso:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula 
 \[
+P_{d}=\frac{\frac{a^{s}}{s!}}{\left(1-\rho\right)\left(\Sigma_{k=0}^{s-1}\frac{a^{k}}{k!}+\frac{a^{s}}{s!}\frac{1}{1-\rho}\right)}
 \]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Propiedades:
+\end_layout
+
+\begin_layout Itemize
+La probabilidad de retraso aumenta de 0 a 1 como 
+\begin_inset Formula $\rho$
+\end_inset
+
+ aumenta de 0 a 1.
+\end_layout
+
+\begin_layout Itemize
+Para 
+\begin_inset Formula $s=1$
+\end_inset
+
+, 
+\begin_inset Formula $P_{d}\left(1,a\right)=a=utilización$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Para 
+\begin_inset Formula $s\geq10$
+\end_inset
+
+, 
+\begin_inset Formula $P_{d}\left(s,a\right)\approx\bar{\Phi}\left(\frac{s-a}{\sqrt{a}}\right)$
+\end_inset
+
+, con 
+\begin_inset Formula $\Phi\left(\right)$
+\end_inset
+
+ la distribución acumulada de la función standar.
+\end_layout
+
+\begin_layout Itemize
+Para un valor dado de 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+, el nivel de servicio provehido no depende de el AWT, pero si es relativo
+ a el tiempo standar de espera.
+ 
+\begin_inset Formula $\frac{AWT}{1/\mu}$
+\end_inset
+
+ el que es una expresión de el porcentaje de espera en la cola, del total
+ de tiempo de servicio.
 \end_layout
 
 \begin_layout Chapter

@@ -419,7 +419,61 @@ P_{d}=\frac{\frac{a^{s}}{s!}}{\left(1-\rho\right)\left(\Sigma_{k=0}^{s-1}\frac{a
 \end_layout
 
 \begin_layout Standard
+Propiedades:
+\end_layout
 
+\begin_layout Itemize
+La probabilidad de retraso aumenta de 0 a 1 como 
+\begin_inset Formula $\rho$
+\end_inset
+
+ aumenta de 0 a 1.
+\end_layout
+
+\begin_layout Itemize
+Para 
+\begin_inset Formula $s=1$
+\end_inset
+
+, 
+\begin_inset Formula $P_{d}\left(1,a\right)=a=utilización$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Para 
+\begin_inset Formula $s\geq10$
+\end_inset
+
+, 
+\begin_inset Formula $P_{d}\left(s,a\right)\approx\bar{\Phi}\left(\frac{s-a}{\sqrt{a}}\right)$
+\end_inset
+
+, con 
+\begin_inset Formula $\Phi\left(\right)$
+\end_inset
+
+ la distribución acumulada de la función standar.
+\end_layout
+
+\begin_layout Itemize
+Para un valor dado de 
+\begin_inset Formula $a$
+\end_inset
+
+ y 
+\begin_inset Formula $s$
+\end_inset
+
+, el nivel de servicio provehido no depende de el AWT, pero si es relativo
+ a el tiempo standar de espera.
+ 
+\begin_inset Formula $\frac{AWT}{1/\mu}$
+\end_inset
+
+ el que es una expresión 
 \end_layout
 
 \begin_layout Chapter
