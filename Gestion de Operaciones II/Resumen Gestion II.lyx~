@@ -134,6 +134,10 @@ Gustavo Avilés Segovia =]
 Introducción
 \end_layout
 
+\begin_layout Section
+Algunos Términos de Gestión
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \[
@@ -157,6 +161,125 @@ Turnover=\frac{\mbox{Ventas}}{\mbox{Total de Activos}}
 \begin_inset Formula 
 \[
 Margen=\frac{\mbox{Ventas - Costos Totales}}{\mbox{Ventas}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Repaso Estadístico
+\end_layout
+
+\begin_layout Itemize
+Esperanza: 
+\begin_inset Formula $\mathbb{E}\left(x\right)=\int xf\left(x\right)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Varianza: 
+\begin_inset Formula $Var\left(x\right)=\mathbb{E}\left(\left(x-\mathbb{E}\left(x\right)\right)^{2}\right)=\mathbb{E}\left(x^{2}\right)-\mathbb{E}\left(x\right)^{2}+2Cov\left(x,x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Covarianza: 
+\begin_inset Formula $Cov\left(x,y\right)=\mathbb{E}\left(xy\right)-\mathbb{E}\left(x\right)\mathbb{E}\left(y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Estimadores
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Promedio: 
+\begin_inset Formula $\bar{X}=\frac{1}{n}\sum x_{i}$
+\end_inset
+
+ es un estimador insesgado.
+\end_layout
+
+\begin_layout Itemize
+Varianza: 
+\begin_inset Formula $\frac{1}{n-1}\sum\left(x_{i}-\bar{X}\right)^{2}$
+\end_inset
+
+ es un estimador insesgado.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Teorema Central del Límite: 
+\begin_inset Formula 
+\[
+\begin{array}{cc}
+\left\{ x_{i}\right\} \mbox{variables aleatorias iid} & \mathbb{E}\left(x_{i}\right)=\mu\\
+ & Var\left(x_{i}\right)=\sigma^{2}
+\end{array}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Entonces se define la variable aletoria 
+\begin_inset Formula 
+\begin{equation}
+z_{n}=\frac{\bar{X}-\mu}{\sqrt{\sigma^{2}/n}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En muchos casos no se tiene la posibilidad de acceder al valor de 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+, en estos casos se utiliza la t-student y la desviación estándar de la
+ muestra.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+t_{n}=\frac{\bar{X}-\mu}{\sqrt{\sigma^{2}/n}}\mbox{ con }t_{n}\sim N\left(0,1\right)\qquad n\rightarrow\infty
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Intervalo de Confianza:
+\begin_inset Formula 
+\begin{equation}
+\mathbb{P}\left(-Z_{1-\alpha/2}\leq t_{n}\leq Z_{1-\alpha/2}\right)=1-\alpha
+\end{equation}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbb{P}\left(\bar{X}-Z_{1-\alpha/2}\sqrt{\frac{\sigma^{2}}{n}}\leq t_{n}\leq\bar{X}+Z_{1-\alpha/2}\sqrt{\frac{\sigma^{2}}{n}}\right)=1-\alpha
 \]
 
 \end_inset
@@ -771,7 +894,57 @@ Lista de Eventos: Eventos a realizarce.
 \end_layout
 
 \begin_layout Itemize
-Contadores Estadísticos: 
+Contadores Estadísticos: Variables que guardanb los indicadores relevantes
+\end_layout
+
+\begin_layout Itemize
+Inicialización: Modelo en 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Slección Evento: Subrutina que determina el siguiente evento.
+\end_layout
+
+\begin_layout Itemize
+Rutinas de Evento: Actualiza el sistema cuando ocurre un evento.
+\end_layout
+
+\begin_layout Itemize
+Rutinas Auxiliares: Generación de nuevas variables aleatorias.
+\end_layout
+
+\begin_layout Itemize
+Generador Reporte: Calcula estimadores de medidas de desempeño.
+\end_layout
+
+\begin_layout Section
+Generación de Variables Aleatorias
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f\left(\right)\sim U\left[0,1\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+x=F^{-1}\left(f\left(\right)\right)\mbox{ con }F\left(x\right)=\mathbb{P}\left(X\leq x\right)
+\end{equation}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter

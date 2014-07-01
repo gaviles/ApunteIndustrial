@@ -947,6 +947,37 @@ x=F^{-1}\left(f\left(\right)\right)\mbox{ con }F\left(x\right)=\mathbb{P}\left(X
 
 \end_layout
 
+\begin_layout Section
+Redicción de Varianza
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mbox{Resultado del Simulador}\in\left[\bar{X}-Z_{1-\alpha/2}\sqrt{\frac{\sigma^{2}}{n}},\bar{X}+Z_{1-\alpha/2}\sqrt{\frac{\sigma^{2}}{n}}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con una menor varinza el intervalo se ajusta más.
+\end_layout
+
+\begin_layout Subsection
+Métodos
+\end_layout
+
+\begin_layout Subsubsection
+Simulaciones Dependientes
+\end_layout
+
+\begin_layout Standard
+Se comparan 2 o más sistemas ( m y n ) 
+\end_layout
+
 \begin_layout Chapter
 Gestión de la Cadena de Suministro
 \end_layout
