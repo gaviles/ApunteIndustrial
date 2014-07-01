@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass scrbook
@@ -47,13 +47,13 @@ figs-within-sections
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format pdf2
 \output_sync 0
@@ -75,15 +75,24 @@ figs-within-sections
 \pdf_pdfusetitle true
 \papersize letterpaper
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -132,6 +141,12 @@ Gustavo Avilés Segovia =]
 
 \begin_layout Chapter
 Introducción
+\end_layout
+
+\begin_layout Standard
+El marco de la gestión de operaciones, busca rentabilizar el negocio, por
+ ejemplo usando ROA.
+ Otra área es la eficiencia operacional.
 \end_layout
 
 \begin_layout Section
@@ -571,14 +586,11 @@ Considerando s, como el número de servidores y a, como el mínimo número
 
 \begin_layout Standard
 Nivel de servicio: 
-\begin_inset Formula $SL=1-P_{d}\left(s,a\right)\exp\left(-\left(s-a\right)AWT\mu\right)$
-\end_inset
+\begin_inset Formula 
+\[
+SL=1-P_{d}\left(s,a\right)\exp\left(-\left(s-a\right)AWT\mu\right)=1-P_{d}\left(s,\rho\right)\exp\left(-s\left(1-\rho\right)AWT\mu\right)
+\]
 
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula $=1-P_{d}\left(s,\rho\right)\exp\left(-s\left(1-\rho\right)AWT\mu\right)$
 \end_inset
 
 
@@ -809,6 +821,20 @@ De preferecnia hacer un diagrama con esta misma información
 
 \end_layout
 
+\begin_layout Section
+Metricas de Nivel se servicio
+\end_layout
+
+\begin_layout Description
+AWT Acceptable Wating Time, corresponde a el máximo tiempo esperado por
+ una porcion, habitualmnete mayoritaria de los consumidores.
+\end_layout
+
+\begin_layout Description
+SL Service Level, es la probabilidad de que consumidores que estan debajo
+ del AWT.
+\end_layout
+
 \begin_layout Subsection
 Tipos de Sistemas
 \end_layout
@@ -945,6 +971,37 @@ x=F^{-1}\left(f\left(\right)\right)\mbox{ con }F\left(x\right)=\mathbb{P}\left(X
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Redicción de Varianza
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\mbox{Resultado del Simulador}\in\left[\bar{X}-Z_{1-\alpha/2}\sqrt{\frac{\sigma^{2}}{n}},\bar{X}+Z_{1-\alpha/2}\sqrt{\frac{\sigma^{2}}{n}}\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con una menor varinza el intervalo se ajusta más.
+\end_layout
+
+\begin_layout Subsection
+Métodos
+\end_layout
+
+\begin_layout Subsubsection
+Simulaciones Dependientes
+\end_layout
+
+\begin_layout Standard
+Se comparan 2 o más sistemas ( m y n ) 
 \end_layout
 
 \begin_layout Chapter

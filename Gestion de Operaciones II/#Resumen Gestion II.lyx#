@@ -293,9 +293,9 @@ Intervalo de Confianza:
 
 
 \begin_inset Formula 
-\[
+\begin{equation}
 \mathbb{P}\left(\bar{X}-Z_{1-\alpha/2}\sqrt{\frac{\sigma^{2}}{n}}\leq t_{n}\leq\bar{X}+Z_{1-\alpha/2}\sqrt{\frac{\sigma^{2}}{n}}\right)=1-\alpha
-\]
+\end{equation}
 
 \end_inset
 
@@ -601,9 +601,9 @@ Considerando s, como el número de servidores y a, como el mínimo número
 \begin_layout Standard
 Nivel de servicio: 
 \begin_inset Formula 
-\[
+\begin{equation}
 SL=1-P_{d}\left(s,a\right)\exp\left(-\left(s-a\right)AWT\mu\right)=1-P_{d}\left(s,\rho\right)\exp\left(-s\left(1-\rho\right)AWT\mu\right)
-\]
+\end{equation}
 
 \end_inset
 
